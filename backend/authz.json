@@ -1,0 +1,1408 @@
+{
+    "UserDetailList": [
+        {
+            "Path": "/",
+            "UserName": "copy_only_user",
+            "UserId": "AIDA4EIYRWZSDVDT5UGEF",
+            "Arn": "arn:aws:iam::833812018788:user/copy_only_user",
+            "CreateDate": "2022-04-18T02:12:37Z",
+            "GroupList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "copy_user_policy",
+                    "PolicyArn": "arn:aws:iam::833812018788:policy/copy_user_policy"
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "Path": "/",
+            "UserName": "cuser",
+            "UserId": "AIDA4EIYRWZSMLI2DKFZQ",
+            "Arn": "arn:aws:iam::833812018788:user/cuser",
+            "CreateDate": "2021-07-22T17:56:07Z",
+            "GroupList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AdministratorAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+                },
+                {
+                    "PolicyName": "AWSCodeBuildAdminAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess"
+                },
+                {
+                    "PolicyName": "AmazonEKSClusterPolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+                },
+                {
+                    "PolicyName": "AWSCodeDeployFullAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AWSCodeDeployFullAccess"
+                },
+                {
+                    "PolicyName": "AmazonEKS_CNI_Policy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+                },
+                {
+                    "PolicyName": "AmazonEKSWorkerNodePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+                },
+                {
+                    "PolicyName": "AmazonEKSServicePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSServicePolicy"
+                },
+                {
+                    "PolicyName": "AmazonEKSFargatePodExecutionRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSFargatePodExecutionRolePolicy"
+                },
+                {
+                    "PolicyName": "AWSCodePipeline_FullAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AWSCodePipeline_FullAccess"
+                },
+                {
+                    "PolicyName": "AmazonEKSVPCResourceController",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "Path": "/",
+            "UserName": "sample-admin",
+            "UserId": "AIDA4EIYRWZSOMGTYRT5V",
+            "Arn": "arn:aws:iam::833812018788:user/sample-admin",
+            "CreateDate": "2021-08-04T21:05:03Z",
+            "GroupList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AdministratorAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+                },
+                {
+                    "PolicyName": "IAMUserChangePassword",
+                    "PolicyArn": "arn:aws:iam::aws:policy/IAMUserChangePassword"
+                },
+                {
+                    "PolicyName": "AWSLambda_FullAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AWSLambda_FullAccess"
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "Path": "/",
+            "UserName": "terra1",
+            "UserId": "AIDA4EIYRWZSHMC3Z6UCZ",
+            "Arn": "arn:aws:iam::833812018788:user/terra1",
+            "CreateDate": "2021-06-15T00:34:11Z",
+            "UserPolicyList": [
+                {
+                    "PolicyName": "LambdaListViewer",
+                    "PolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Action": [
+                                    "lambda:ListFunctions",
+                                    "lambda:GetFunction",
+                                    "lambda:GetAccountSettings"
+                                ],
+                                "Resource": "*"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "PolicyName": "TempCdkDeployPower",
+                    "PolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Action": [
+                                    "cloudformation:*",
+                                    "s3:GetObject",
+                                    "s3:PutObject",
+                                    "s3:ListBucket"
+                                ],
+                                "Resource": "*"
+                            },
+                            {
+                                "Effect": "Allow",
+                                "Action": [
+                                    "iam:PassRole"
+                                ],
+                                "Resource": "arn:aws:iam::833812018788:role/cdk-hnb659fds-cfn-exec-role-833812018788-ap-northeast-1"
+                            },
+                            {
+                                "Effect": "Allow",
+                                "Action": [
+                                    "lambda:ListFunctions",
+                                    "lambda:GetFunction"
+                                ],
+                                "Resource": "*"
+                            },
+                            {
+                                "Effect": "Allow",
+                                "Action": [
+                                    "logs:CreateLogGroup",
+                                    "logs:CreateLogStream",
+                                    "logs:PutLogEvents"
+                                ],
+                                "Resource": "*"
+                            },
+                            {
+                                "Effect": "Allow",
+                                "Action": [
+                                    "events:PutRule",
+                                    "events:PutTargets",
+                                    "events:DeleteRule",
+                                    "events:RemoveTargets"
+                                ],
+                                "Resource": "*"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "GroupList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AdministratorAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+                },
+                {
+                    "PolicyName": "AWSLambda_ReadOnlyAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AWSLambda_ReadOnlyAccess"
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "Path": "/",
+            "UserName": "user3",
+            "UserId": "AIDA4EIYRWZSG5UHDDCY7",
+            "Arn": "arn:aws:iam::833812018788:user/user3",
+            "CreateDate": "2021-08-02T16:27:25Z",
+            "GroupList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonS3FullAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+                }
+            ],
+            "Tags": []
+        }
+    ],
+    "GroupDetailList": [],
+    "RoleDetailList": [
+        {
+            "Path": "/service-role/",
+            "RoleName": "aaaa-role-27vv0bmz",
+            "RoleId": "AROA4EIYRWZSF3OXLHPPW",
+            "Arn": "arn:aws:iam::833812018788:role/service-role/aaaa-role-27vv0bmz",
+            "CreateDate": "2021-10-17T03:18:48Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSLambdaBasicExecutionRole-40ca8145-2899-42a9-adda-8d69745fda84",
+                    "PolicyArn": "arn:aws:iam::833812018788:policy/service-role/AWSLambdaBasicExecutionRole-40ca8145-2899-42a9-adda-8d69745fda84"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/service-role/",
+            "RoleName": "AmazonBedrockExecutionRoleForKnowledgeBase_66mkn",
+            "RoleId": "AROA4EIYRWZSAORYA2T4W",
+            "Arn": "arn:aws:iam::833812018788:role/service-role/AmazonBedrockExecutionRoleForKnowledgeBase_66mkn",
+            "CreateDate": "2023-12-11T12:02:15Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "AmazonBedrockKnowledgeBaseTrustPolicy",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "bedrock.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole",
+                        "Condition": {
+                            "StringEquals": {
+                                "aws:SourceAccount": "833812018788"
+                            },
+                            "ArnLike": {
+                                "aws:SourceArn": "arn:aws:bedrock:us-west-2:833812018788:knowledge-base/*"
+                            }
+                        }
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonBedrockFoundationModelPolicyForKnowledgeBase_66mkn",
+                    "PolicyArn": "arn:aws:iam::833812018788:policy/service-role/AmazonBedrockFoundationModelPolicyForKnowledgeBase_66mkn"
+                },
+                {
+                    "PolicyName": "AmazonBedrockOSSPolicyForKnowledgeBase_66mkn",
+                    "PolicyArn": "arn:aws:iam::833812018788:policy/service-role/AmazonBedrockOSSPolicyForKnowledgeBase_66mkn"
+                },
+                {
+                    "PolicyName": "AmazonBedrockS3PolicyForKnowledgeBase_66mkn",
+                    "PolicyArn": "arn:aws:iam::833812018788:policy/service-role/AmazonBedrockS3PolicyForKnowledgeBase_66mkn"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {
+                "LastUsedDate": "2023-12-11T12:20:46Z",
+                "Region": "us-west-2"
+            }
+        },
+        {
+            "Path": "/",
+            "RoleName": "AmazonSSMRoleForInstancesQuickSetup",
+            "RoleId": "AROA4EIYRWZSKBU6OHTVQ",
+            "Arn": "arn:aws:iam::833812018788:role/AmazonSSMRoleForInstancesQuickSetup",
+            "CreateDate": "2021-07-20T09:45:34Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ec2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [
+                {
+                    "Path": "/",
+                    "InstanceProfileName": "AmazonSSMRoleForInstancesQuickSetup",
+                    "InstanceProfileId": "AIPA4EIYRWZSBA3UBU5Y6",
+                    "Arn": "arn:aws:iam::833812018788:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                    "CreateDate": "2021-07-20T09:45:39Z",
+                    "Roles": [
+                        {
+                            "Path": "/",
+                            "RoleName": "AmazonSSMRoleForInstancesQuickSetup",
+                            "RoleId": "AROA4EIYRWZSKBU6OHTVQ",
+                            "Arn": "arn:aws:iam::833812018788:role/AmazonSSMRoleForInstancesQuickSetup",
+                            "CreateDate": "2021-07-20T09:45:34Z",
+                            "AssumeRolePolicyDocument": {
+                                "Version": "2012-10-17",
+                                "Statement": [
+                                    {
+                                        "Effect": "Allow",
+                                        "Principal": {
+                                            "Service": "ec2.amazonaws.com"
+                                        },
+                                        "Action": "sts:AssumeRole"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonSSMManagedInstanceCore",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+                },
+                {
+                    "PolicyName": "AmazonSSMPatchAssociation",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AmazonSSMPatchAssociation"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/",
+            "RoleName": "amplify-login-lambda-605dfbc8",
+            "RoleId": "AROA4EIYRWZSGJNTFA6MB",
+            "Arn": "arn:aws:iam::833812018788:role/amplify-login-lambda-605dfbc8",
+            "CreateDate": "2022-03-20T15:44:58Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [
+                {
+                    "PolicyName": "Amplify-backend",
+                    "PolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Action": [
+                                    "amplifybackend:GetToken",
+                                    "amplifybackend:DeleteToken"
+                                ],
+                                "Resource": "arn:aws:amplifybackend:*:*:/backend/*"
+                            },
+                            {
+                                "Effect": "Allow",
+                                "Action": [
+                                    "amplify:GetApp"
+                                ],
+                                "Resource": "*"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "AttachedManagedPolicies": [],
+            "Tags": [],
+            "RoleLastUsed": {
+                "LastUsedDate": "2023-12-11T10:33:25Z",
+                "Region": "ap-northeast-1"
+            }
+        },
+        {
+            "Path": "/",
+            "RoleName": "ap-northeast-1_sEkrBKTGt-authRole",
+            "RoleId": "AROA4EIYRWZSBYTJPXGR7",
+            "Arn": "arn:aws:iam::833812018788:role/ap-northeast-1_sEkrBKTGt-authRole",
+            "CreateDate": "2022-03-20T15:44:54Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Federated": "cognito-identity.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRoleWithWebIdentity",
+                        "Condition": {
+                            "StringEquals": {
+                                "cognito-identity.amazonaws.com:aud": "ap-northeast-1:06f7ebe8-8cd8-4554-b9f7-a3373a13623e"
+                            },
+                            "ForAnyValue:StringLike": {
+                                "cognito-identity.amazonaws.com:amr": "authenticated"
+                            }
+                        }
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/",
+            "RoleName": "ap-northeast-1_sEkrBKTGt_Full-access",
+            "RoleId": "AROA4EIYRWZSOEUWZ6HUP",
+            "Arn": "arn:aws:iam::833812018788:role/ap-northeast-1_sEkrBKTGt_Full-access",
+            "CreateDate": "2022-03-20T15:44:54Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Federated": "cognito-identity.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRoleWithWebIdentity",
+                        "Condition": {
+                            "StringEquals": {
+                                "cognito-identity.amazonaws.com:aud": "ap-northeast-1:06f7ebe8-8cd8-4554-b9f7-a3373a13623e"
+                            },
+                            "ForAnyValue:StringLike": {
+                                "cognito-identity.amazonaws.com:amr": "authenticated"
+                            }
+                        }
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [
+                {
+                    "PolicyName": "Full-access-Policy",
+                    "PolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Sid": "CLICloudformationPolicy",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "cloudformation:DeleteStackSet",
+                                    "cloudformation:DescribeStackSet",
+                                    "cloudformation:UpdateStackSet"
+                                ],
+                                "Resource": [
+                                    "arn:aws:cloudformation:*:*:stack/amplify-*"
+                                ]
+                            },
+                            {
+                                "Sid": "CLIManageviaCFNPolicy",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "cognito-idp:SetUserPoolMfaConfig"
+                                ],
+                                "Resource": "*",
+                                "Condition": {
+                                    "ForAnyValue:StringEquals": {
+                                        "aws:CalledVia": [
+                                            "cloudformation.amazonaws.com"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "Sid": "CLISDKCalls",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "lambda:GetLayerVersionByArn",
+                                    "rekognition:DescribeCollection",
+                                    "logs:DescribeLogStreams",
+                                    "logs:GetLogEvents",
+                                    "lex:GetBot",
+                                    "lex:GetBuiltinIntent",
+                                    "lex:GetBuiltinIntents",
+                                    "lex:GetBuiltinSlotTypes",
+                                    "lambda:InvokeFunction",
+                                    "cognito-idp:ListIdentityProviders"
+                                ],
+                                "Resource": "*"
+                            },
+                            {
+                                "Sid": "CLISSMSDKCalls",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "ssm:DeleteParameter",
+                                    "ssm:DeleteParameters",
+                                    "ssm:GetParameter",
+                                    "ssm:GetParameters",
+                                    "ssm:GetParametersByPath",
+                                    "ssm:PutParameter"
+                                ],
+                                "Resource": "arn:aws:ssm:*:*:parameter/amplify/*"
+                            },
+                            {
+                                "Sid": "GeoPowerUser",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "geo:*"
+                                ],
+                                "Resource": "*"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AdministratorAccess-Amplify",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/",
+            "RoleName": "ap-northeast-1_sEkrBKTGt_Manage-only",
+            "RoleId": "AROA4EIYRWZSG6SKC5XMX",
+            "Arn": "arn:aws:iam::833812018788:role/ap-northeast-1_sEkrBKTGt_Manage-only",
+            "CreateDate": "2022-03-20T15:44:56Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Federated": "cognito-identity.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRoleWithWebIdentity",
+                        "Condition": {
+                            "StringEquals": {
+                                "cognito-identity.amazonaws.com:aud": "ap-northeast-1:06f7ebe8-8cd8-4554-b9f7-a3373a13623e"
+                            },
+                            "ForAnyValue:StringLike": {
+                                "cognito-identity.amazonaws.com:amr": "authenticated"
+                            }
+                        }
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [
+                {
+                    "PolicyName": "Amplify-Admin-ManageOnly-Policy",
+                    "PolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Sid": "AmplifyBackendManageOnlyPolicy",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "amplifybackend:getBackend*"
+                                ],
+                                "Resource": "*"
+                            },
+                            {
+                                "Sid": "AmplifyGetPolicy",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "amplify:Get*",
+                                    "amplify:List*"
+                                ],
+                                "Resource": [
+                                    "arn:aws:amplify:ap-northeast-1:*:apps/d3godkq308jebd",
+                                    "arn:aws:amplify:ap-northeast-1:*:apps/d3godkq308jebd/*"
+                                ]
+                            },
+                            {
+                                "Sid": "S3GetPolicy",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "s3:getObject"
+                                ],
+                                "Resource": [
+                                    "arn:aws:s3:::amplify-amplifytodo-dev-235914-deployment/*"
+                                ]
+                            },
+                            {
+                                "Sid": "DataManagePolicy",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "appsync:GraphQL"
+                                ],
+                                "Resource": [
+                                    "arn:aws:appsync:ap-northeast-1:*:apis/hckbsybv5bbwbpllfiqlm2awsu/*"
+                                ]
+                            },
+                            {
+                                "Sid": "AuthManagePolicy",
+                                "Effect": "Allow",
+                                "Action": [
+                                    "cognito-idp:AdminAddUserToGroup",
+                                    "cognito-idp:AdminCreateUser",
+                                    "cognito-idp:CreateGroup",
+                                    "cognito-idp:DeleteGroup",
+                                    "cognito-idp:DeleteUser",
+                                    "cognito-idp:ListUsers",
+                                    "cognito-idp:AdminGetUser",
+                                    "cognito-idp:ListUsersInGroup",
+                                    "cognito-idp:AdminDisableUser",
+                                    "cognito-idp:AdminRemoveUserFromGroup",
+                                    "cognito-idp:AdminResetUserPassword",
+                                    "cognito-idp:AdminListGroupsForUser",
+                                    "cognito-idp:ListGroups",
+                                    "cognito-idp:AdminDeleteUser",
+                                    "cognito-idp:AdminListUserAuthEvents",
+                                    "cognito-idp:AdminDeleteUser",
+                                    "cognito-idp:AdminConfirmSignUp",
+                                    "cognito-idp:AdminEnableUser",
+                                    "cognito-idp:AdminUpdateUserAttributes"
+                                ],
+                                "Resource": [
+                                    "arn:aws:cognito-idp:ap-northeast-1:*:userpool/ap-northeast-1_ozfer533j"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
+            "AttachedManagedPolicies": [],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/service-role/",
+            "RoleName": "api_call-role-ay0ghg85",
+            "RoleId": "AROA4EIYRWZSGANASJBO2",
+            "Arn": "arn:aws:iam::833812018788:role/service-role/api_call-role-ay0ghg85",
+            "CreateDate": "2020-05-13T09:53:59Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSLambdaBasicExecutionRole-dc749e58-98af-405f-a31a-fa84cc04ae0c",
+                    "PolicyArn": "arn:aws:iam::833812018788:policy/service-role/AWSLambdaBasicExecutionRole-dc749e58-98af-405f-a31a-fa84cc04ae0c"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/service-role/",
+            "RoleName": "api_call-role-u7fwqcdy",
+            "RoleId": "AROA4EIYRWZSKFO55PWIN",
+            "Arn": "arn:aws:iam::833812018788:role/service-role/api_call-role-u7fwqcdy",
+            "CreateDate": "2020-05-13T09:52:25Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSLambdaBasicExecutionRole-5736bc66-b497-4f1d-806f-590eb3248a52",
+                    "PolicyArn": "arn:aws:iam::833812018788:policy/service-role/AWSLambdaBasicExecutionRole-5736bc66-b497-4f1d-806f-590eb3248a52"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/",
+            "RoleName": "aws-elasticbeanstalk-ec2-role",
+            "RoleId": "AROAJZTBVC6AWJDYOMJDY",
+            "Arn": "arn:aws:iam::833812018788:role/aws-elasticbeanstalk-ec2-role",
+            "CreateDate": "2015-05-01T21:03:42Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2008-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ec2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [
+                {
+                    "Path": "/",
+                    "InstanceProfileName": "aws-elasticbeanstalk-ec2-role",
+                    "InstanceProfileId": "AIPAJPVA4L5KL6UCRFBUY",
+                    "Arn": "arn:aws:iam::833812018788:instance-profile/aws-elasticbeanstalk-ec2-role",
+                    "CreateDate": "2015-05-01T21:03:42Z",
+                    "Roles": [
+                        {
+                            "Path": "/",
+                            "RoleName": "aws-elasticbeanstalk-ec2-role",
+                            "RoleId": "AROAJZTBVC6AWJDYOMJDY",
+                            "Arn": "arn:aws:iam::833812018788:role/aws-elasticbeanstalk-ec2-role",
+                            "CreateDate": "2015-05-01T21:03:42Z",
+                            "AssumeRolePolicyDocument": {
+                                "Version": "2008-10-17",
+                                "Statement": [
+                                    {
+                                        "Sid": "",
+                                        "Effect": "Allow",
+                                        "Principal": {
+                                            "Service": "ec2.amazonaws.com"
+                                        },
+                                        "Action": "sts:AssumeRole"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSElasticBeanstalkMulticontainerDocker",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AWSElasticBeanstalkMulticontainerDocker"
+                },
+                {
+                    "PolicyName": "AWSElasticBeanstalkWebTier",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AWSElasticBeanstalkWebTier"
+                },
+                {
+                    "PolicyName": "AWSElasticBeanstalkWorkerTier",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AWSElasticBeanstalkWorkerTier"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/",
+            "RoleName": "aws-elasticbeanstalk-service-role",
+            "RoleId": "AROAJNB5IDXIGIECV7DB4",
+            "Arn": "arn:aws:iam::833812018788:role/aws-elasticbeanstalk-service-role",
+            "CreateDate": "2018-03-24T14:45:43Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "elasticbeanstalk.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole",
+                        "Condition": {
+                            "StringEquals": {
+                                "sts:ExternalId": "elasticbeanstalk"
+                            }
+                        }
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSElasticBeanstalkEnhancedHealth",
+                    "PolicyArn": "arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkEnhancedHealth"
+                },
+                {
+                    "PolicyName": "AWSElasticBeanstalkService",
+                    "PolicyArn": "arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkService"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/",
+            "RoleName": "AWS-QuickSetup-StackSet-Local-AdministrationRole",
+            "RoleId": "AROA4EIYRWZSCNSZISICF",
+            "Arn": "arn:aws:iam::833812018788:role/AWS-QuickSetup-StackSet-Local-AdministrationRole",
+            "CreateDate": "2021-07-20T09:43:36Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "cloudformation.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [
+                {
+                    "PolicyName": "AssumeRole-AWS-QuickSetup-StackSet-Local-ExecutionRole",
+                    "PolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Action": [
+                                    "sts:AssumeRole"
+                                ],
+                                "Resource": [
+                                    "arn:*:iam::*:role/AWS-QuickSetup-StackSet-Local-ExecutionRole"
+                                ],
+                                "Effect": "Allow"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "AttachedManagedPolicies": [],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/",
+            "RoleName": "AWS-QuickSetup-StackSet-Local-ExecutionRole",
+            "RoleId": "AROA4EIYRWZSM7JTSR3UR",
+            "Arn": "arn:aws:iam::833812018788:role/AWS-QuickSetup-StackSet-Local-ExecutionRole",
+            "CreateDate": "2021-07-20T09:43:47Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "arn:aws:iam::833812018788:role/AWS-QuickSetup-StackSet-Local-AdministrationRole"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AdministratorAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/service-role/",
+            "RoleName": "AWSCodePipelineServiceRole-ap-northeast-1-cron-poll",
+            "RoleId": "AROA4EIYRWZSCB2TG33QO",
+            "Arn": "arn:aws:iam::833812018788:role/service-role/AWSCodePipelineServiceRole-ap-northeast-1-cron-poll",
+            "CreateDate": "2021-07-20T07:44:29Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "codepipeline.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/eks.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAmazonEKS",
+            "RoleId": "AROA4EIYRWZSC37NG3HBB",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/eks.amazonaws.com/AWSServiceRoleForAmazonEKS",
+            "CreateDate": "2021-07-19T21:29:41Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "eks.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonEKSServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/eks-nodegroup.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAmazonEKSNodegroup",
+            "RoleId": "AROA4EIYRWZSHLVM4NERJ",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/eks-nodegroup.amazonaws.com/AWSServiceRoleForAmazonEKSNodegroup",
+            "CreateDate": "2021-07-24T07:36:05Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "eks-nodegroup.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSServiceRoleForAmazonEKSNodegroup",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRoleForAmazonEKSNodegroup"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/es.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAmazonElasticsearchService",
+            "RoleId": "AROAJSEFOXSKJLAJ452L6",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/es.amazonaws.com/AWSServiceRoleForAmazonElasticsearchService",
+            "CreateDate": "2018-03-28T11:00:04Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "es.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonElasticsearchServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AmazonElasticsearchServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/observability.aoss.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAmazonOpenSearchServerless",
+            "RoleId": "AROA4EIYRWZSNV4MCI2QZ",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/observability.aoss.amazonaws.com/AWSServiceRoleForAmazonOpenSearchServerless",
+            "CreateDate": "2023-12-11T11:20:09Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "observability.aoss.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonOpenSearchServerlessServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AmazonOpenSearchServerlessServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {
+                "LastUsedDate": "2024-10-03T14:26:23Z",
+                "Region": "us-west-2"
+            }
+        },
+        {
+            "Path": "/aws-service-role/ssm.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAmazonSSM",
+            "RoleId": "AROA4EIYRWZSO5RRVRQH4",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "CreateDate": "2021-07-20T09:44:39Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ssm.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonSSMServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AmazonSSMServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/ops.apigateway.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAPIGateway",
+            "RoleId": "AROA4EIYRWZSMJW37O34D",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/ops.apigateway.amazonaws.com/AWSServiceRoleForAPIGateway",
+            "CreateDate": "2025-05-22T20:20:32Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ops.apigateway.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "APIGatewayServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/APIGatewayServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/dynamodb.application-autoscaling.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForApplicationAutoScaling_DynamoDBTable",
+            "RoleId": "AROA4EIYRWZSLXA2LEJIS",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/dynamodb.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_DynamoDBTable",
+            "CreateDate": "2020-04-22T06:39:02Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "dynamodb.application-autoscaling.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSApplicationAutoscalingDynamoDBTablePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingDynamoDBTablePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/ecs.application-autoscaling.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForApplicationAutoScaling_ECSService",
+            "RoleId": "AROA4EIYRWZSKSEM4Q7NF",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_ECSService",
+            "CreateDate": "2021-07-22T17:36:16Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ecs.application-autoscaling.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSApplicationAutoscalingECSServicePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingECSServicePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/autoscaling.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAutoScaling",
+            "RoleId": "AROAI3WJIP6JPE4OCYW5M",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
+            "CreateDate": "2018-03-24T15:01:26Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "autoscaling.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AutoScalingServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AutoScalingServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/autoscaling.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAutoScaling_example-asg",
+            "RoleId": "AROA4EIYRWZSA65YDJZRE",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling_example-asg",
+            "CreateDate": "2021-08-02T15:19:59Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "autoscaling.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AutoScalingServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AutoScalingServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/cloud9.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAWSCloud9",
+            "RoleId": "AROA4EIYRWZSFPSM4BS7N",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/cloud9.amazonaws.com/AWSServiceRoleForAWSCloud9",
+            "CreateDate": "2020-04-15T11:11:53Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "cloud9.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSCloud9ServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSCloud9ServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/ecs.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForECS",
+            "RoleId": "AROA4EIYRWZSKCPKBVJW6",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+            "CreateDate": "2021-07-20T00:21:24Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ecs.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonECSServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AmazonECSServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/elasticloadbalancing.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForElasticLoadBalancing",
+            "RoleId": "AROAIU6CQK6XUNH7HLZJE",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing",
+            "CreateDate": "2018-01-19T00:46:44Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "elasticloadbalancing.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSElasticLoadBalancingServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSElasticLoadBalancingServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/globalaccelerator.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForGlobalAccelerator",
+            "RoleId": "AROA4EIYRWZSMQVD5MUIA",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/globalaccelerator.amazonaws.com/AWSServiceRoleForGlobalAccelerator",
+            "CreateDate": "2021-07-21T10:34:36Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "globalaccelerator.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSGlobalAcceleratorSLRPolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSGlobalAcceleratorSLRPolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/rds.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForRDS",
+            "RoleId": "AROA4EIYRWZSJBDK66VJ4",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
+            "CreateDate": "2020-04-29T08:03:34Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "rds.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AmazonRDSServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AmazonRDSServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {
+                "LastUsedDate": "2025-08-10T09:06:44Z",
+                "Region": "ap-northeast-1"
+            }
+        },
+        {
+            "Path": "/aws-service-role/support.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForSupport",
+            "RoleId": "AROAJG4TOGIHCWWSUJFB2",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+            "CreateDate": "2018-12-23T19:50:16Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "support.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSSupportServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        },
+        {
+            "Path": "/aws-service-role/trustedadvisor.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForTrustedAdvisor",
+            "RoleId": "AROAJG6QDIQ7XXLY5SW7I",
+            "Arn": "arn:aws:iam::833812018788:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+            "CreateDate": "2019-01-21T00:30:06Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "trustedadvisor.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "InstanceProfileList": [],
+            "RolePolicyList": [],
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AWSTrustedAdvisorServiceRolePolicy",
+                    "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorServiceRolePolicy"
+                }
+            ],
+            "Tags": [],
+            "RoleLastUsed": {}
+        }
+    ],
+    "Policies": [],
+    "IsTruncated": true,
+    "Marker": "RAEt95Md9mEIM67PTNDKjGmxGM7gECVBjzpbAJTqn+HKvMA0XA/pWaJwKBIqSHl0Ta1NMqAInYa0/E2hdTL/Ju38OP3KsqGkqiwITc5+RNv8oBrs+Q/nj"
+}
